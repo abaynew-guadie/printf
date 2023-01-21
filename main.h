@@ -28,7 +28,6 @@ int printf_oct(va_list val);
 int printf_unsigned(va_list args);
 int printf_bin(va_list val);
 int printf_srev(va_list args);
-int printf_rot13(va_list args);
 int printf_int(va_list args);
 int printf_dec(va_list args);
 int _strlen(char *s);
@@ -42,6 +41,8 @@ int printf_string(va_list val);
 int _putchar(char c);
 int get_width(const char *format, int *i, va_list list);
 int get_precision(const char *format, int *i, va_list list);
+int get_flags(const char *format, int *i);
+int printf_rot13(va_list args); 
 
 #endif
 
