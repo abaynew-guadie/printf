@@ -15,7 +15,6 @@
 #define F_ZERO 4
 #define F_HASH 8
 #define F_SPACE 16
-
 /**
  * struct format - match the conversion specifiers for printf
  *  @id: type char pointer of the specifier i.e (l, h) for (d, i, u, o, x, X)
@@ -27,7 +26,6 @@ char *id;
 int (*f)();
 } convert_match;
 int _printf(const char *format, ...);
-
 int printf_pointer(va_list val);
 int printf_hex_aux(unsigned long int num);
 int printf_HEX_aux(unsigned int num);
@@ -41,7 +39,6 @@ int printf_srev(va_list args);
 int printf_int(va_list args);
 int printf_dec(va_list args);
 int _strlen(char *s);
-int *_strcpy(char *dest, char *src);
 int _strlenc(const char *s);
 int rev_string(char *s);
 int _strlenc(const char *s);
@@ -53,6 +50,5 @@ int get_width(const char *format, int *i, va_list list);
 int get_precision(const char *format, int *i, va_list list);
 int get_flags(const char *format, int *i);
 int printf_rot13(va_list args);
-
 #endif
 

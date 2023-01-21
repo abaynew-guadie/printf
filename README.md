@@ -1,4 +1,5 @@
 0x011.c printf team project
+
 0. Write function that produces output with conversion specifiers c, s, and %.
 1.  Handle conversion specifiers d, i.
 2. Handle conversion specifier b.
@@ -17,5 +18,5 @@
 15. All above options should work well together.
 team project
 Authors name
-* Abaynew GUadie 
+* Abaynew Guadie 
 * Natnael Tariku
