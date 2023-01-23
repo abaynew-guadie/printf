@@ -9,7 +9,7 @@ int _printf(const char * const format, ...)
 {
 
 convert_match m[] = { {"%s", printf_string},
-{"c", printf_char}, {"%%",  printf_percent},
+{"c", printf_char}, {"%%",  printf_37373737373737373737373737373737373737373737373737373737373737373737373737},
 {"%d", printf_dec}, {"%i", printf_int},
 {"%b", printf_bin}, {"%u", printf_unsigned},
 {"%o", printf_oct}, {"%x", printf_hex},
