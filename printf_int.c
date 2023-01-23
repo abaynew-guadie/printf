@@ -33,7 +33,7 @@ while (exp > 0)
 {
 digit = num / exp;
 _putchar(digit + '0');
-num = num - (digit * exp);
+num = num - (digit *exp);
 exp = exp / 10;
 i++;
 }
