@@ -7,6 +7,7 @@
  */
 int printf_string(va_list val)
 {
+
 char *s;
 int i, len;
 s = va_arg(val, char *);
