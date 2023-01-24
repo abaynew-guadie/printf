@@ -104,10 +104,10 @@ return (write(1, "%%", 1));
 int print_int(va_list types, char buffer[], int flags, int width, int precision,int size)
 {
 int i = BUFF_SIZE - 2;
-int is_negative = 0;
+/*int is_negative = 0;*/
 long int n = va_arg(types, long int);
-/*unsigned long  int num;*/
-int num;
+unsigned long  int num;
+
 n = convert_size_number(n, size);
 
 if (n == 0)
@@ -123,8 +123,8 @@ while (num > 0)
 buffer[i--] = (num % 10) + '0';
 num /= 10;
 }
+/*i++;*/
 
-i++;
 return (write_number(is_negative, i, buffer, flags, width, precision, size));
 }
 /************************* PRINT BINARY *************************/
@@ -141,7 +141,7 @@ return (write_number(is_negative, i, buffer, flags, width, precision, size));
  */
 int print_binary(va_list types, char buffer[], int flags, int width, int precision, int size)
 {
-
+char z;
 unsigned int n, m, i, sum;
 unsigned int a[32];
 int count;
