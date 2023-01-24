@@ -11,8 +11,7 @@
  *
  * Return: Number of chars printed
 */
-int print_char(va_list types, char buffer[],
-int flags, int width, int precision, int size)
+int print_char(va_list types, char buffer[], int flags, int width, int precision, int size)
 {
 char c = va_arg(types, int);
 return (handle_write_char(c, buffer, flags, width, precision, size));
@@ -29,8 +28,7 @@ return (handle_write_char(c, buffer, flags, width, precision, size));
  *
  * Return: Number of chars printed
  */
-int print_string(va_list types, char buffer[],
-int flags, int width, int precision, int size)
+int print_string(va_list types, char buffer[], int flags, int width, int precision, int size)
 {
 int length = 0, i;
 char *str = va_arg(types, char *);
@@ -81,8 +79,7 @@ return (write(1, str, length));
  *
  * Return: Number of chars printed
  */
-int print_percent(va_list types, char buffer[],
-int flags, int width, int precision, int size)
+int print_percent(va_list types, char buffer[], int flags, int width, int precision, int size)
 {
 UNUSED(types);
 UNUSED(buffer);
@@ -104,13 +101,13 @@ return (write(1, "%%", 1));
  *
  * Return: Number of chars printed
  */
-int print_int(va_list types, char buffer[],
-int flags, int width, int precision, int size)
+int print_int(va_list types, char buffer[], int flags, int width, int precision,int size)
 {
 int i = BUFF_SIZE - 2;
 int is_negative = 0;
 long int n = va_arg(types, long int);
-unsigned long int num;
+/*unsigned long  int num;*/
+int num;
 n = convert_size_number(n, size);
 
 if (n == 0)
@@ -128,8 +125,7 @@ num /= 10;
 }
 
 i++;
-return (write_number(is_negative, i, buffer,
-flags, width, precision, size));
+return (write_number(is_negative, i, buffer, flags, width, precision, size));
 }
 /************************* PRINT BINARY *************************/
 /**
@@ -143,8 +139,7 @@ flags, width, precision, size));
  *
  * Return: Numbers of char printed.
  */
-int print_binary(va_list types, char buffer[],
-int flags, int width, int precision, int size)
+int print_binary(va_list types, char buffer[], int flags, int width, int precision, int size)
 {
 
 unsigned int n, m, i, sum;
