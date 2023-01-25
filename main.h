@@ -55,8 +55,8 @@ int _putchar(char c);
 int get_width(const char *format, int *i, va_list list);
 int get_precision(const char *format, int *i, va_list list);
 
-int get_flags(const char *format, int *i), int write_unsgnd(int is_negative,    int ind, char buffer[], int flags, int width, int precision, int size);
-
+int write_unsgnd(int is_negative, int ind, char buffer[], int flags, int width, int precision, int size);
+int print_hexa(va_list types, char map_to[], char buffer[], int flags, char flag_ch, int width, int precision, int size);
 /****************** UTILS ******************/
 int is_printable(char);
 int append_hexa_code(char, char[], int);
