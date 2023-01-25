@@ -44,5 +44,7 @@ int printf_char(va_list val);
 int printf_string(va_list val);
 int _putchar(char c);
 
-
+int get_width(const char *format, int *i, va_list list);
+int get_precision(const char *format, int *i, va_list list);
+int get_flags(const char *format, int *i);
 #endif
