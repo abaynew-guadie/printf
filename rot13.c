@@ -1,5 +1,11 @@
 #include "main.h"
 
+/**
+ * rot13 - function convert letters into rot13 encryption
+ *
+ * @str: holds our input string
+ * Return: returns the rot13 encrypted str, ct
+ */
 int rot13(char *str)
 {
 	int index = 0, a, flag = 0, ct = 0;
