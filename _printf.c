@@ -1,6 +1,13 @@
 #include "main.h"
 
-
+/**
+* no_struct - a function that is called when passing args to the switch case
+*
+* @c: the character passed that was after %
+* @count: incremetation of count
+* @argu: the va_list argument variable
+* Return: count
+*/
 int no_struct(char c, int count, va_list argu)
 {
 	int j;
@@ -62,6 +69,12 @@ int no_struct(char c, int count, va_list argu)
 }
 
 
+/**
+ * _printf - funtion is an implementation of the native printf function
+ *
+ * @format: input directives
+ * Return: returns nothing.
+ */
 int _printf(const char *format, ...)
 {
 	int i = 0;
