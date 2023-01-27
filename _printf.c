@@ -72,7 +72,7 @@ int no_struct(char c, int count, va_list argu)
 /**
  * _printf - funtion is an implementation of the native printf function
  *
- * @format: input directives
+ * @format: holds input directives
  * Return: returns nothing.
  */
 int _printf(const char *format, ...)
