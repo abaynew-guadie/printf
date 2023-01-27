@@ -4,8 +4,7 @@
 /**
  * main - Prints len
  * Command to run test:
- * gcc ./tests/6_print_pointer.c _printf.c
- * handle_print.c prf.c  prf1.c  prf2.c utilts.c get_flags.c
+ * gcc ./tests/6_print_pointer.c _printf.c get_flags.c
  */
 int main(void)
 {

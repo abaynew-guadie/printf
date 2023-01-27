@@ -4,8 +4,7 @@
 /**
  *main - Prints
  *  * Command to run test:
- * gcc ./_printf.c handle_print.c prf.c prf1.c prf2.c utilts.c
- * tests/0_unsigned_binary.c get_flags.c
+ * gcc ./test/0_unsigned_binary.c get_flags.c
  *
  * Return 0.
  */

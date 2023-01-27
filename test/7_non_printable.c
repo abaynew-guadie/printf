@@ -5,8 +5,7 @@
 /**
  *  *main - Print len
  *  * Command to run test:
-*gcc ./tests/7_non_printable.c _printf.c handle_print.c prf.c prf1.c prf2.c
-* utilts.c get_flags.c
+*gcc ./test/7_non_printable.c _printf.c utilts.c get_flags.c
 */
 int main(void)
 {

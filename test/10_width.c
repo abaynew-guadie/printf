@@ -4,8 +4,8 @@
 /**
  * main - Prints len
  * Command to run test:
- * gcc ./test/10_width.c _printf.c handle_print.c get_flags.c
- * get_width.c  write_handlers.c prf.c utilts.c
+ * gcc ./test/10_width.c _printf.c get_flags.c
+ * get_width.c utilts.c
  */
 int main(void)
 {

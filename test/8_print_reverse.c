@@ -5,8 +5,7 @@
 /**
 * main - Prints len
 * Command to run test:
-*gcc./test/8_print_reverse.c _printf.c handle_print.c write_handlers.c
-* get_width.c prf.c  utilts.c get_flags.c
+*gcc./test/8_print_reverse.c _printf.c get_width.c utilts.c get_flags.c
 */
 int main(void)
 {

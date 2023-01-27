@@ -1,9 +1,9 @@
-#include "main.h"
+#include "../main.h"
 #include <stdio.h>
 /**
- * main - Prints lenghths in void
+ * main - Prints length
  *  Command to run test:
- * gcc ./tests/0_printf_strings.c *.c
+ * gcc ./test/0_printf_strings.c *.c
  */
 int main(void)
 {

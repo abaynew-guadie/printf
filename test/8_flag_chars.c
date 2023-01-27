@@ -5,10 +5,8 @@
 /**
  * main - Print len
  * Command to run test:
- * gcc./tests/8_flag_chars.c _printf.c handle_print.c get_flags.c get_width.c
- * prf.c utilts.c
- *gcc ./tests/8_flag_chars.c _printf.c handle_print.c get_flags.c
- *prf.c prf1.c  prf2.c utils.c
+ * gcc./test/8_flag_chars.c _printf.c  get_flags.c get_width.c utilts.c
+ *gcc ./test/8_flag_chars.c _printf.c get_flags.c
  */
 int main(void)
 {
