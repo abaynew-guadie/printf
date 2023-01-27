@@ -1,5 +1,11 @@
 #include "main.h"
 
+/**
+ * print_digit - print our input integer
+ *
+ * @n: holds our input
+ * Return: returns the digit
+ */
 int print_digit(int n)
 {
 	int div;
