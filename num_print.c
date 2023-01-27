@@ -1,6 +1,12 @@
 #include "main.h"
 #include <unistd.h>
 
+/**
+* print_number - funtion prints a given integer
+*
+* @n: input num
+* Return: count
+*/
 int print_number(int n)
 {
 	int dig = n;
