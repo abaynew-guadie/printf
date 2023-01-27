@@ -1,5 +1,11 @@
 #include "main.h"
 
+/**
+ * rev_string - reverses our input string
+ *
+ * @s: holds our input char
+ * Return: returns rev
+ */
 int rev_string(char *s)
 {
 	int i = 0, length = 0;
