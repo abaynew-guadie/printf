@@ -1,6 +1,11 @@
 #include "main.h"
 
-
+/**
+* base10_bin - functoin converts base10 to binary
+*
+* @n: input variable
+* Return: count2
+*/
 int base10_bin(int n)
 {
 	int temp = n;
